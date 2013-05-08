@@ -48,7 +48,7 @@ This workflow is typically used for minor changes and documentation.
     
 Now switch back to the GitHub website and visit your pyladiessf repository.  You should see all the latest changes that you pushed from your computer to your repo.
 
-Now let's submit a pull request to the upstream project.  Click the button Pull Request.  You will be redirected to the upstream repo, and an issue will be generated.  This notifies by email the repo owner that a change is waiting to be merged.
+Now let's submit a pull request to the upstream project.  Click the button Pull Request, then complete and submit the form.  You will be redirected to the upstream repo, and an issue and pull request will be generated automatically.  This notifies by email the repo owner that a change is waiting to be merged, and you will be notified by email of any status change or comments.
 
 Git workflow on GitHub: create a new branch
 -------------------------------------------
@@ -72,10 +72,20 @@ This workflow is exactly the same as the previous, but with a couple of minor ch
     # now commit those changes with a descriptive message
     git commit -a -m "commit_message"
     
-    # push your changes from your local repo to your GitHub repo
-    git push
-    
+    # push your changes from your local repo to your GitHub repo, either:
     # on the first push only (-u allows the tracking of "MYBRANCH"):
-    git push -u origin MYBRANCH
+    git push -u origin MYBRANCHNAME
     # on subsequent pushes:
     git push
+
+Now switch back to the GitHub website and visit your pyladiessf repository, and submit a pull request just like before.  You might need to switch to the proper branch MYBRANCHNAME.
+
+Summary
+-------
+Most of the time, these workflows just work.  There are occassionally merge conflicts, so I recommend getting a good tool that helps resolve conflicts for merging.  I like [Syntevo's SmartGitHg](www.syntevo.com/smartgithg).
+
+Now try creating your own repo and ask others to contribute to it.
+
+Questions
+---------
+I hang out in IRC on irc.freenode.net in the #pyramid channel as username stevepiercy.  Stop by and say howdy.
