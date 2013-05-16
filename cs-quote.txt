@@ -1,0 +1,4 @@
+Quotes by famous people in computer science
+
+"It's easier to ask forgiveness than it is to get permission."
+- Grace Hopper
